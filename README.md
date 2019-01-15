@@ -2,16 +2,19 @@
 
 SectionList with sidebar to jump to sections
 
+![SectionList-array-of-strings](https://user-images.githubusercontent.com/7901330/51170468-393ea780-18b7-11e9-941d-b346566b49fc.gif)
+![SectionList-array-of-objects](https://user-images.githubusercontent.com/7901330/51170632-8fabe600-18b7-11e9-84af-fe6ed25abebb.gif)
+
 ## Installation
 
-```
-npm i react-native-sectionlist-sidebar
+```sh
+$ npm i react-native-sectionlist-sidebar
 ```
 
 or
 
-```
-yarn add react-native-sectionlist-sidebar
+```sh
+$ yarn add react-native-sectionlist-sidebar
 ```
 
 ## Usage
@@ -25,7 +28,7 @@ import SectionListSidebar from 'react-native-sectionlist-sidebar'
 ### 2. Embed the component
 
 ```js
-class ExampleScreen extends React.Component {
+class App extends React.Component {
   render() {
     return (
       <SectionListSidebar
@@ -127,10 +130,20 @@ export default class MinimalExampleScreen extends React.Component {
 
 > Use `renderSidebarItem` only if you need to fire a function before/after humping to section and/or add components to sidebar items. You may try accomplishing what you want using `sidebarItemContainerStyle` and `sidebarItemTextStyle` props first, and if you failed, use `renderSidebarItem`.
 
+### More examples
+* Names example with array of strings. [array-of-strings-example.js](https://github.com/HasanAlyazidi/react-native-sectionlist-sidebar/examples/array-of-strings-example.js)
+
+![SectionList-array-of-strings](https://user-images.githubusercontent.com/7901330/51171252-12817080-18b9-11e9-94bf-dd1ccb649206.png)
+
+
+* Months example with array of objects. [array-of-objects-example.js](https://github.com/HasanAlyazidi/react-native-sectionlist-sidebar/examples/array-of-objects-example.js)
+
+![SectionList-array-of-strings](https://user-images.githubusercontent.com/7901330/51171355-5d02ed00-18b9-11e9-9682-0bcfc5dd2339.png)
+
 ## TODO
 - [X] Custom sidebar component
 - [X] Add RTL support
+- [X] Add more examples
 - [ ] Mark selected sidebar item
-- [ ] Add more examples
 - [ ] Add Tests
 - [ ] Your suggestion!
