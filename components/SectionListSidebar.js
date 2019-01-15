@@ -76,9 +76,13 @@ export default class SectionListSidebar extends React.PureComponent {
 
   setFlatListRef = (ref) => { this.sectionList = ref; }
 
-  renderSectionHeader = ({ section }) => (
-    <Text style={this.props.sectionHeaderTextStyle}>{section.title}</Text>
-  );
+  renderSectionHeader = ({ section }) => {
+    const { sectionHeaderHeight, sectionHeaderTextStyle } = this.props;
+
+    return (
+      <Text style={[{ height: sectionHeaderHeight }, sectionHeaderTextStyle]}>{section.title}</Text>
+    )
+  };
 
   renderDefaultSidebarItem = ({ item, index }) => (
     <TouchableOpacity

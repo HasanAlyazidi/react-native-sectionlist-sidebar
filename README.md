@@ -57,6 +57,8 @@ class ExampleScreen extends React.Component {
 | containerStyle            | object           | SectionListSidebar component's style  | No       |                |
 | rtl                       | boolean          | Reverse layout if set to true         | No       | false          |
 
+And all the optional props of `<SectionList />`. You can find them [here](https://facebook.github.io/react-native/docs/sectionlist#props).
+
 ## Examples
 
 ### Minimal example
