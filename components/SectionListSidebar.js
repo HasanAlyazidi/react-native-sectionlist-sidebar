@@ -80,7 +80,7 @@ export default class SectionListSidebar extends React.PureComponent {
     const { sectionHeaderHeight, sectionHeaderTextStyle } = this.props;
 
     return (
-      <Text style={[{ height: sectionHeaderHeight }, sectionHeaderTextStyle]}>{section.title}</Text>
+      <Text style={{ ...sectionHeaderTextStyle, height: sectionHeaderHeight }}>{section.title}</Text>
     )
   };
 
