@@ -107,7 +107,7 @@ export default class MinimalExampleScreen extends React.Component {
 
 > Use `renderSectionHeader` only if you need to add components to the section headers. For simple headers use `sectionHeaderTextStyle`.
 
-> `sectionHeaderHeight` must br equal to section header's height with top and bottom margins, paddings, and borders.
+> `sectionHeaderHeight` must be equal to section header's height with top and bottom margins, paddings, and borders.
 
 ### Custom sidebar item component
 ```js
