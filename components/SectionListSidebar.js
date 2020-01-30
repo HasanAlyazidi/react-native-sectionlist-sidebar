@@ -93,11 +93,13 @@ export default class SectionListSidebar extends React.PureComponent {
     </TouchableOpacity>
   );
 
-  jumpToSection = (sectionIndex, itemIndex = -1) => {
-    this.sectionList.scrollToLocation({
-      sectionIndex,
-      itemIndex,
-    });
+  jumpToSection = (sectionIndex, itemIndex = 0) => {
+    try {
+      this.sectionList.scrollToLocation({
+        sectionIndex,
+        itemIndex,
+      });
+    } catch (e) {}
   }
 
   renderSidebarItem = this.props.renderSidebarItem || this.renderDefaultSidebarItem
